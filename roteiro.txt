@@ -23,7 +23,12 @@ em http://localhost:3333/    aparece:
    Cannot GET /
    """
 
-
+em http://localhost:3333/health    aparece:
+   """
+   {
+      "message": "Servidor está on..."
+   }   
+   """
 
 
 
