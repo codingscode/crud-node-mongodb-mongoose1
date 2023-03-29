@@ -1,0 +1,40 @@
+
+
+
+no terminal:
+   npm init -y
+   npm i express
+   npm i nodemon -D
+
+
+
+no terminal:
+   npm run dev
+
+
+
+
+
+
+
+
+em http://localhost:3333/    aparece:
+   """
+   Cannot GET /
+   """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
