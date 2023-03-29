@@ -5,6 +5,7 @@ no terminal:
    npm init -y
    npm i express
    npm i nodemon -D
+   npm i mongoose
 
 
 
@@ -29,6 +30,16 @@ em http://localhost:3333/health    aparece:
       "message": "Servidor está on..."
    }   
    """
+
+
+https://github.com/Automattic/mongoose
+
+
+
+
+
+
+
 
 
 
