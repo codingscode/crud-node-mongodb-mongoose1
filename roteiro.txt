@@ -173,8 +173,17 @@ método DELETE com http://localhost:3333/products/6426e43412acf62fd2717bfb  clic
 
 
 
-
-
+método POST com http://localhost:3333/products  clicar em SEND
+   no corpo colocar:
+      {
+          "title": "produto 3",
+          "description": "redmi 10c",
+          "price": 700
+      }
+   no Body em baixo aparece:
+      {
+          "message": "este nome já existe"
+      }
 
 
 

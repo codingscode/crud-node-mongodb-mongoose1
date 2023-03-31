@@ -5,6 +5,18 @@ import ProductModel from '../Models/ProductModel' // const ProductModel = requir
 //class ProductController {
    
 export const store = async (req, res) => {
+   const { title, description, price } = req.body
+
+   const productAlreadyExists = await ProductModel.findOne({ title })
+
+   if (productAlreadyExists) {
+      return res.status(400).json({ message: 'este nome já existe' })
+   }
+   
+   if (!title || !description || !price) {
+      return res.status(400).json({ message: 'title, description e price são exigidos' })
+   }
+
    const createdProduct = await ProductModel.create(req.body)
    
    return res.status(200).json(createdProduct)
