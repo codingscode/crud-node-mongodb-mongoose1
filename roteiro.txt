@@ -35,12 +35,31 @@ em http://localhost:3333/health    aparece:
 https://github.com/Automattic/mongoose
 
 
+com postman
+
+método GET com http://localhost:3333/health
 
 
 
+método POST com http://localhost:3333/products
+   no corpo colocar o json :
+     {
+        "title": "Produto 1",
+        "description": "Descrição do produto 1",
+        "price": 100
+     }
+
+   aparece  :
+   {
+      "title": "produto 1",
+      "description": "descrição do produto 1",
+      "price": 100,
+      "_id": "6426ddbde79d301e8d142516",
+      "__v": 0
+   }
 
 
-
+https://askubuntu.com/questions/1258271/use-ufw-to-access-localhostport-mobile-development
 
 
 

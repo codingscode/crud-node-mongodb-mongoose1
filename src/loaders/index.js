@@ -1,15 +1,30 @@
 
-const startDB = require('./mongodb')
+import startDB from './mongodb' // const startDB = require('./mongodb')
 
 
-class Loaders {
+const Loaders =  {
+
+   start : () => {
+      startDB()
+   }
+}
+
+/* const Loaders = () => {
+
+   const start = () => {
+      startDB()
+   }
+} */
+
+
+/* class Loaders {
    start() {
       startDB()
    }
 
-}
+} */
 
+export default Loaders
 
-module.exports = new Loaders()
-
+//export default Loaders // module.exports = new Loaders()
 

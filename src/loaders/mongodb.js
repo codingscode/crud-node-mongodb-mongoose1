@@ -1,12 +1,19 @@
+import mongoose from 'mongoose' // const mongoose = require('mongoose')
 
-const mongoose = require('mongoose')
 
 
-async function startDB() {
+/* async function startDB() {
 
-   await mongoose.connect('mongodb+srv://hp:oAcQjgx6TiskmL8Z@cluster0.hwov2ir.mongodb.net/test')
+   await mongoose.connect('mongodb+srv://hp:v4GWcE9D4ubCxdIw@cluster0.rfk8q9u.mongodb.net/?retryWrites=true&w=majority')
+} */
+
+ const startDB = async () =>  {
+   
+   
+   await mongoose.connect('mongodb://localhost:27017')
 }
 
-module.exports = startDB
 
+export default startDB // module.exports = startDB
 
+//await mongoose.connect('mongodb+srv://hp:v4GWcE9D4ubCxdIw@cluster0.rfk8q9u.mongodb.net/?retryWrites=true&w=majority')
