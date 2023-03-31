@@ -140,6 +140,50 @@ método PUT com http://localhost:3333/products/6426df1be79d301e8d142518  clicar 
 
 
 
+método DELETE com http://localhost:3333/products/6426e43412acf62fd2717bfb  clicar em SEND
+   em body em baixo aparece:
+   {
+       "message": "Produto deletado"
+   }
+
+   listando:
+    [
+        {
+            "_id": "6426ddbde79d301e8d142516",
+            "title": "produto 1",
+            "description": "descrição do produto 1",
+            "price": 100,
+            "__v": 0
+        },
+        {
+            "_id": "6426df1be79d301e8d142518",
+            "title": "L200 triton",
+            "description": "Caminhonete boa",
+            "price": 375000,
+            "__v": 0
+        },
+        {
+            "_id": "6426e41b12acf62fd2717bf9",
+            "title": "produto 3",
+            "description": "redmi 10c",
+            "price": 700,
+            "__v": 0
+        }
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

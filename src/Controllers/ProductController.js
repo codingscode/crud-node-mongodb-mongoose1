@@ -52,12 +52,28 @@ export const update = async (req, res) => {
    
 }
 
-export const destroy = async () => {
+export const destroy = async (req, res) => {
+   
+   try {
+      const { id } = req.params
+      
+      const productDeleted = await ProductModel.findByIdAndDelete(id)
+      
+      if (!productDeleted) {
+         return res.status(404).json({ message: 'Produto inexistente' })
+      }
+   
+      return res.status(200).json({ message: 'Produto deletado' })
+
+   }
+   catch (err) {
+      return res.status(404).json({ message: 'Falha ao deletar produto' })
+   }
 
 }   
-   
 
-//}
+
+
 
 
 
