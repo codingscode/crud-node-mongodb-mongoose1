@@ -19,9 +19,9 @@ export const index = async (req, res) => {
 export const show = async (req, res) => {
 
    try {
-      const { batatinha } = req.params
+      const { id } = req.params
       
-      const product = await ProductModel.findById(batatinha)
+      const product = await ProductModel.findById(id)
       
       if (!product) {
          return res.status(404).json({ message: 'Produto inexistente' })
@@ -33,11 +33,23 @@ export const show = async (req, res) => {
    catch (err) {
       return res.status(404).json({ message: 'Verifique o id do produto' })
    }
-
+   
 }
 
-export const update = async () => {
+export const update = async (req, res) => {
+   try {
+      const { id } = req.params
+      
+      await ProductModel.findByIdAndUpdate(id, req.body)
 
+      return res.status(200).json({ message: 'Produto atualizado' })
+   }
+   catch (err) {
+      return res.status(404).json({ message: 'Falha ao atualizar produto' })
+
+   }
+   
+   
 }
 
 export const destroy = async () => {
