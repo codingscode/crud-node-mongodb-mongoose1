@@ -83,7 +83,15 @@ método GET com http://localhost:3333/products  clicar em SEND
 
 
 
-
+método GET com http://localhost:3333/products/6426df1be79d301e8d142518  clicar em SEND
+   aparece em Body:
+    {
+        "_id": "6426df1be79d301e8d142518",
+        "title": "produto 2",
+        "description": "notebook nitro",
+        "price": 6000,
+        "__v": 0
+    }
 
 
 
