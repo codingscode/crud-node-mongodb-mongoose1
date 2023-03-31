@@ -62,6 +62,37 @@ método POST com http://localhost:3333/products
 https://askubuntu.com/questions/1258271/use-ufw-to-access-localhostport-mobile-development
 
 
+método GET com http://localhost:3333/products  clicar em SEND
+   aparece em Body:
+    [
+        {
+            "_id": "6426ddbde79d301e8d142516",
+            "title": "produto 1",
+            "description": "descrição do produto 1",
+            "price": 100,
+            "__v": 0
+        },
+        {
+            "_id": "6426df1be79d301e8d142518",
+            "title": "produto 2",
+            "description": "notebook nitro",
+            "price": 6000,
+            "__v": 0
+        }
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

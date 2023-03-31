@@ -4,27 +4,28 @@ import ProductModel from '../Models/ProductModel' // const ProductModel = requir
 
 //class ProductController {
    
-   export const store = async (req, res) => {
-      const createdProduct = await ProductModel.create(req.body)
-      
-      return res.status(200).json(createdProduct)
-   }
+export const store = async (req, res) => {
+   const createdProduct = await ProductModel.create(req.body)
    
-   export const index = async () => {
-   
-   }
-   
-   export const show = async () => {
-   
-   }
+   return res.status(200).json(createdProduct)
+}
 
-   export const update = async () => {
+export const index = async (req, res) => {
+   const products = await ProductModel.find()
    
-   }
-   
-   export const destroy = async () => {
-   
-   }   
+   return res.status(200).json(products)
+}
+
+export const show = async () => {
+
+}
+export const update = async () => {
+
+}
+
+export const destroy = async () => {
+
+}   
    
 
 //}
