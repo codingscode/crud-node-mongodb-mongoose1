@@ -1,5 +1,5 @@
-import express from 'express' // const express = require('express')
-import routes from './routes'  // const routes = require('./routes')
+import express from 'express'
+import routes from './routes'
 
 
 const app = express()
@@ -8,6 +8,4 @@ app.use(express.json())
 app.use(routes)
 
 
-export default app // module.exports = app
-
-
+export default app

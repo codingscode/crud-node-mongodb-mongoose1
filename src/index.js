@@ -1,7 +1,6 @@
 
-import app from './app'  // const app = require('./app')
-import Loaders from './loaders/index'  // const Loaders = require('./loaders/index')
-
+import app from './app'
+import Loaders from './loaders/index'
 
 
 Loaders.start()

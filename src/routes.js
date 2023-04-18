@@ -1,7 +1,7 @@
 
 import { Router } from 'express' // const { Router } = require('express')
 
-import { store, index, show, update, destroy } from './Controllers/ProductController' // const ProductController = require('./Controllers/ProductController')
+import { store, index, show, update, destroy } from './Controllers/ProductController'
 
 
 const routes = Router()
@@ -18,6 +18,4 @@ routes.put('/products/:id', update)
 routes.delete('/products/:id', destroy)
 
 
-export default routes // module.exports = routes
-
-
+export default routes

@@ -1,8 +1,5 @@
-import ProductModel from '../Models/ProductModel' // const ProductModel = require('../Models/ProductModel')
+import ProductModel from '../Models/ProductModel'
 
-
-
-//class ProductController {
    
 export const store = async (req, res) => {
    const { title, description, price } = req.body
@@ -83,10 +80,3 @@ export const destroy = async (req, res) => {
    }
 
 }   
-
-
-
-
-
-
-//export default ProductController // module.exports = new ProductController()
